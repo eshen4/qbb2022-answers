@@ -1,0 +1,2 @@
+# QBB 2022 - Day 1 - Lunch Exercises Submission
+1. I'm excited to learn more in general about coding and how to utilize these tools within various biological scenarios. I'm particularly excited (and simultaneously anxious) to gain more fluency in python.
