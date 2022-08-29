@@ -53,4 +53,21 @@
 	   8 G
 	Through this method of segmentation, we conclude that promoter regions are not clearly and objectively defined. Despite the success of the intersect and nucleotide count, we started our process essentially guessing possible promoter regions, and although our guesses were educated, it can't be said that the method is entirely definable.
 3. 
+	#!/bin/bash
+
+	#USAGE: bash exercise3.sh input_VCF
+
+	awk '/^#/{next} {print $1,$2-1, $2}' $1 > variants.bed
+		#sorts a bed file (ignoring header) and prints columns 1, 2, and the difference between values in columns 1 and 2 into a new bed file titled "variants"
+	sort -k1,1 -k2,2n ~/data/bed_files/genes.bed > genes.sorted.bed
+		#sorts columns 1 and 2 first by column 1, and then by column 2 numerically. This file is then saved as genes.sorted.bed
+	bedtools closest -a variants.bed -b genes.sorted.bed
+		#bedtools closest command, similar to intersect, will look for overlap between variables A and B. However, in the event of no overlap, it will report the closest overlap feature.
+	
+	{bash exercise3.sh ~/data/vcf_files/random_snippet.vcf > snippet3.vcf
+		wc -l snippet3.vcf
+		cut -f 4 snippet3.vcf |  sort | uniq | wc -l}
+		Results:
+		WC (returned variants): 10293
+		Unique genes: 200
 	
