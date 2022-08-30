@@ -18,7 +18,7 @@ def parse_bed(fname):
         fields = line.rstrip().split()
         fieldN = len(fields)
         if not ( 3 <= fieldN <= 9 or fieldN == 12 ):
-            #print(f"Line {i} appears malformed", file=sys.stderr)
+            print(f"Line {i} appears malformed", file=sys.stderr)
             counter+=1
             print(counter)
             continue
@@ -38,7 +38,7 @@ def parse_bed(fname):
                     assert len(fields[j]) == fields[9]
             bed.append(fields)
         except:
-            #print(f"Line {i} appears malformed", file=sys.stderr)
+            print(f"Line {i} appears malformed", file=sys.stderr)
             counter+=1
             print(counter)
     fs.close()
