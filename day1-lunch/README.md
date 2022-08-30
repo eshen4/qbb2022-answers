@@ -71,3 +71,5 @@
 	e. AF = 1 can appear once per row.
 	f. To extract the AFR values, I'd follow the same code written in part d, except for the initial cut I would put the field at 7.
 	
+
+	testing new git pull submission method
