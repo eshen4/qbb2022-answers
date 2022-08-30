@@ -1,0 +1,6 @@
+Question 2b: You actually ended up with just about the right answer, but I think it makes a little bit more sense to count the number of lines in both files, rather than the number of words, as that will be influenced by how many fields you have in each file.
+Question 2c: Sure, but what would you make a histogram of? You need to somehow figure out which exons come from which gene...
+Question 3c: Yup, you definitely want to subtract field 2 from field 3, but I think before you sort, you want to try to sum the lengths for each state
+Question 5d: I'm not actually sure your second cut statement is doing anything, but I could be wrong. Also, what you have to find the number of AF=1 variants works, but it makes you look through all the other AFs as well. Maybe there's a way to only pull out the AF=1 variants, and then count those...
+
+Nice work!
