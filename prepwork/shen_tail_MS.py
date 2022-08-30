@@ -23,3 +23,6 @@ for line in mylist:
 # script reverses the order of the lines when it prints them out. It's
 # clear why you do this. However, think about how you would print the same
 # lines out but in the original order. Overall, great job! - Mike
+
+#From discussion in class:
+    #You can reverse twice to get rid of the issue with the script printing out from the last line (-Yijun)
