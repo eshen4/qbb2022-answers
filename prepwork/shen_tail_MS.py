@@ -25,4 +25,6 @@ for line in mylist:
 # lines out but in the original order. Overall, great job! - Mike
 
 #From discussion in class:
-    #You can reverse twice to get rid of the issue with the script printing out from the last line (-Yijun)
+    #You can reverse twice to get rid of the issue with the script printing out from the last line (-Yijun)'
+    #Using a negative variable will also run from the end/reverse it n_lines = -10 (?) (-Paul)
+        #Expected solution, doesn't have the issue of reversing order
