@@ -12,6 +12,8 @@ Ex 2. Overall goals
 				ref = line[3]
 	3. Run through random_snippet vcf, pulling ID info for each line
 		Look up ID based on chrom, pos, ref
-		Two outcomes: ID is in dbSNP, or it isn't in dbSNP
-			
+		Two outcomes: ID is in dbSNP, or it isn't in dbSNP	
 	4. Report the number of unmatched outcomes through a counter
+	
+	Results:
+	unmatched outcomes = 100
