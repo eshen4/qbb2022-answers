@@ -18,3 +18,10 @@ Results:
 
 Exercise 2:
 I noticed that the two images (PC 1 vs PC2 and PC1 vs PC3) are almost mirror images of each other. I also noticed that for both plots, there's much greater clustering around the lowest numbers of PC1. I suppose this represents greater similarities among the lower values.
+
+Exercise 3:
+man join:
+	join [-a file number | -v file number] [-e string] [-o list] [-t char] 
+	[-1 field] [-2 field] file1 file2
+
+*Can't get legend to show correctly*
