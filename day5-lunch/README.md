@@ -20,6 +20,7 @@ parental_age.csv - Proband_id, Father_age, Mother_age
 
 awk 'BEGIN{FS=","; OFS="\t"} {$1=$1; print}' aau1043_parental_age.csv | sort -k1 > ages.txt
 
+join -1 1 -2 1 parents.txt ages.txt > joinfull.txt
 2. 
 Maternal OLS Regression Results:
 
