@@ -39,19 +39,15 @@ less -S contigs.fasta.fai
 dnadiff ~/qbb2022-answers/week1-homework/asm/ref.fa ~/qbb2022-answers/week1-homework/scaffolds.fasta
 less out.report
 
-3.2) The length of the longest alignment is 234497
+3.2) The length of the longest alignment is 207000 bp
 nucmer ~/qbb2022-answers/week1-homework/asm/ref.fa ~/qbb2022-answers/week1-homework/scaffolds.fasta
 show-coords out.delta
-    [S1]     [E1]  |     [S2]     [E2]  |  [LEN 1]  [LEN 2]  |  [% IDY]  | [TAGS]
-=====================================================================================
-       3    26789  |        1    26787  |    26787    26787  |   100.00  | Halomonas	NODE_1_length_234497_cov_20.506978
-   26790   233794  |    27500   234497  |   207005   206998  |    99.98  | Halomonas	NODE_1_length_234497_cov_20.506978
 
 3.3) There is 1 insertion, 15 deletions (indels)
 
-4.1) The position of the insertion is between 26787 and 27500.
+4.1) The position of the insertion is between 26788 and 27497.
 
-4.2) The insertion is 772 bp long.
+4.2) The insertion is 710 bp long.
 
 4.3) The DNA sequence of the encoded message(the insertion) is saved under "insertion.txt":
 
