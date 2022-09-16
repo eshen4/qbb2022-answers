@@ -27,6 +27,9 @@ ax.hist(x, density=True, color = 'c')
 mu = 5
 #here mu is lambda
 ax.plot(x, poisson.pmf(x, mu), 'bo', ms=8)
+ax.set_xlabel("number of overlapping reads")
+ax.set_ylabel("frequency of coverage")
+ax.set_title("5x genome coverage of 1Mbp genome")
 plt.savefig("ex1_2.png")
 plt.close(fig)
 
